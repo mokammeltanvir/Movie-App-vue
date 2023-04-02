@@ -7,9 +7,10 @@
     <h1>Movies <span>App</span></h1>    
   </router-link>
   </header>
-
-  <main>
-    <router-view />
+ <main>
+    <div class="container">
+      <router-view></router-view>
+    </div>
   </main>
 </template>
 
@@ -47,6 +48,11 @@ header {
       color: #34d399;
     }
   }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 </style>
