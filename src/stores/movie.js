@@ -22,7 +22,7 @@ export const useMovieStore = defineStore('movie',{
 
     async GetMovie(id){
       if(this.search !=""){
-        const {data} =  await axios.get(`http://www.omdbapi.com/?apikey=e2037866&i=${id}&plot=full`);
+        const {data} =  await axios.get(`http://www.omdbapi.com/?apikey=da0bdb0f&i=${id}&plot=full`);
         console.log(data);
         this.singleMovie = data;
       }
